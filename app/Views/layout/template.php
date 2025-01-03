@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?? 'Sistem KRS' ?></title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
+    <!-- Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
     <style>
         .sidebar {
             height: 100vh;
@@ -37,10 +38,6 @@
         }
     </style>
 
-    <!-- Tambahkan CSS Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-
 <body>
     <div class="container-fluid">
 
@@ -50,8 +47,8 @@
         </button>
 
         <div class="row">
-            <!-- Sidebar -->
-            <nav class="col-md-2 d-md-block bg-light sidebar collapse" id="sidebarMenu">
+             <!-- Sidebar -->
+             <nav class="col-md-2 d-md-block bg-light sidebar collapse" id="sidebarMenu">
                 <div class="position-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -77,7 +74,7 @@
         </div>
     </div>
 
-    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Fungsi untuk toggle sidebar
         document.getElementById("sidebarToggle").addEventListener("click", function() {
@@ -87,7 +84,6 @@
             content.classList.toggle("full");
         });
     </script>
-
 </body>
 
 </html>
